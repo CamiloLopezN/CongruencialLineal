@@ -6,7 +6,6 @@ public class LinearCongruence {
     private int multiplicator;
     private int increment;
     private int module;
-
     private int count;
 
     public LinearCongruence(int seed, int multiplicator, int increment, int module, int count) {
@@ -21,7 +20,7 @@ public class LinearCongruence {
         for (int i = 1; i <= count; i++) {
             int number = getNumbers(seed);
             double result = (double) number / (double) module;
-            System.out.println("Numero: " + result);
+            System.out.println(i + ") Numero: " + result);
             seed = number;
         }
     }
